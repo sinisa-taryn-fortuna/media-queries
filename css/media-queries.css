@@ -90,7 +90,6 @@ footer p{
 /*------- Adjusting the layout with media queries for desktop -------*/
 @media screen and (min-width: 960px) {
 
-    /*------- Adjusting the different nav items for desktop view -------*/
     * {
         /*max-width: 1024px;*/
         width: 100%;
@@ -107,6 +106,25 @@ footer p{
                 "footer footer"
 
     }
+
+    .header-img {
+        grid-area: image;
+    }
+
+    .main {
+        grid-area: mainSection;
+    }
+
+    .sub-section {
+        grid-area: subSection;
+    }
+
+    footer {
+        /*margin: auto 0;*/
+        grid-area: footer;
+    }
+
+    /*------- Adjusting the different nav items for desktop view -------*/
 
     nav {
         display: flex;
@@ -136,26 +154,7 @@ footer p{
         display: flex;
     }
 
-    .header-img {
-        grid-area: image;
-    }
-
-    .main {
-        grid-area: mainSection;
-    }
-
-    .sub-section {
-        grid-area: subSection;
-    }
-
-    /*footer p {*/
-    /*    grid-area: copy;*/
-    /*}*/
-
-    footer {
-        /*margin: auto 0;*/
-        grid-area: footer;
-    }
-
 }
+/*------- End desktop Media query -------*/
+
 
